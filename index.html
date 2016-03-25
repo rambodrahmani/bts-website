@@ -1,0 +1,1934 @@
+<!--
+    Author: Rambod Rahmani <rambodrahmani@yahoo.it>
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Berlin Talent Summit Website">
+        <meta name="author" content="Rambod Rahmani">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <title>Berlin Talent Summit</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
+
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet"  type="text/css">
+        <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+        <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+        <script src="jscookie/src/js_cookie.js"></script>
+
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/init.js"></script>
+
+        <script type="text/javascript">
+            var hashTagActive = "";
+
+            function scrollToContact() {
+                $('html,body').animate({
+                    scrollTop: $('#contact').offset().top
+                }, 1000, 'swing');
+            }
+        </script>
+
+        <style type="text/css">
+			@font-face {
+			    font-family: "Adam";
+			    src: url(fonts/adam.otf) format("truetype");
+			}
+			h1.customAdamFont { 
+			    font-family: "Adam", Verdana, Tahoma;
+			}
+		</style>
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars" style="color:white"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <i class="fa fa-home"></i>  <!--<span class="light">Start</span> Bootstrap-->
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a id="liBts2016" class="page-scroll" href="#bts2016">BTS 2016</a>
+                        </li>
+                        <li>
+                            <a id="liStory" class="page-scroll" href="#story">story</a>
+                        </li>
+                        <!-- <li>
+                            <a id="liPress" class="page-scroll" href="#press">Press</a>
+                        </li> -->
+                        <li>
+                            <a id="liContact" class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Video/Intro Section -->
+        <header class="intro">
+            <div class="bgndVideo">
+                <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=IdOZwN0CD88',containment:'.intro', quality:'hd1080', optimizeDisplay:true, loop:false, startAt:0, realfullscreen:true, autoPlay:true, mute:true, opacity:1, stopMovieOnBlur:false, showControls:false}"></a>
+            </div>
+            <div class="intro-body">
+                <div class="container">
+                	<div class="overlay"></div>
+                    <div class="heading-row">
+                        <h1 class="brand-heading section-title">Berlin Talent Summit</h1>
+                    </div>
+                    <div class="bts2016-heading bts2016 col-lg-8 col-lg-offset-2">
+                        <h3 class="bts_orange" style="margin-bottom:1%;">April 27-29th, 2016 I Berlin</h3>
+                        <button href="#contact" onClick="scrollToContact()" type="button" class="btn btn-primary btn-lg outline" style="margin-top:1%;margin-bottom:1%;">Become part of #BTS16</button>
+
+                        <div style="margin-top:1%;">
+                            <h3 class="bts_orange">Stay updated about the Berlin Talent Summit</h3>
+                            <form id="subscription-form" role="form">
+                                <div style="margin-top:15px;">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                        <input class="form-control" type="text" id="s_email" name="" placeholder="your@email.com">
+                                    </div>
+                                    <input type="submit" value="Subscribe" class="btn btn-large btn-primary btn-subscribe" />
+                                </div>
+                                <div class="ajax-response" style="color: red; padding-top: 60px;"></div>
+                            	<div class="ajax-response-success" style="color: green; padding-top: 60px;"><i class="fa fa-thumbs-up "></i> Subscription successfully sent.</div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="subheading-row">
+                        <h2 class="subheading-row-Left">
+                            What started as an university project in 2014...
+                        </h2>
+                        <h2 class="subheading-row-Right">
+                            Became Europe’s largest cross-border recruiting event in 2015.
+                        </h2>
+                    </div>
+                    -->
+                </div>
+                <div class="btn-scroll-down">
+                    <a href="#bts2016" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- Video Section Ends Here -->
+
+        <!-- BTS 2016 Section -->
+        <!--
+        <section id="bts2016" class="bts2016 container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <img src="img/btsLogo.png" alt="" width="312px" height="406px" style="margin-bottom:30px;margin-top:0px;" />
+                    <h3>April 27-29th, 2016 I Berlin</h3>
+                </div>
+            </div>
+        </section>
+
+        <div id="about" class="about">
+            <div class="bts2016">
+                <div class="line2">
+                    <div class="container">
+                        <div class="row Fresh">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <button href="#contact" onClick="scrollToContact()" type="button" class="btn btn-primary btn-lg outline" style="margin-top:0px;">Become part of #BTS16</button>
+
+                                <div style="margin-top:35px;">
+                                    <h4><b>Stay updated</b> about the Berlin Talent Summit</h4>
+                                    <form action="" method="post" role="form">
+                                        <div style="margin-top:15px;">
+                                            <div class="input-group" style="width:55%; margin-left:11%; margin-top:2px; float:left;">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-envelope"></i>
+                                                </span>
+                                                <input class="form-control" type="text" id="" name="" placeholder="your@email.com" style="height:45px; font-size:24px; text-align:center;">
+                                            </div>
+                                            <input type="submit" value="Subscribe" class="btn btn-large btn-primary" style="width:20%; margin-right:11%; float:right;" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <section id="bts2016" class="bts2016 container content-section text-center">
+            <div class="row">
+                <div class="container">
+                    <h1 class="bts_orange customAdamFont" style="font-size:28px; font-weight:0; margin-top:10px; margin-bottom:15px;">
+                        Europe's leading cross-border recruiting conference.
+                    </h1>
+                    <h1 class="bts_orange customAdamFont" style="font-size:28px; font-weight:0; margin-top:10px;">
+                        Connecting Europe’s best talents with Europe’s best companies.
+                    </h1>
+                    <div class="col-lg-8 col-lg-offset-2" style="text-align:justify;margin-top:20px;margin-bottom:20px;">
+                        <p  style="text-align:center; font-family: proxima-nova, sans-serif;">
+                            For three days in April 2016, <b>300 of the best talents</b>, students, graduates and young professionals <b>from all over Europe will come to Berlin</b> and meet Europe's most successful companies and startups.<br />
+                            <br />
+                            <b>The Berlin Talent Summit stands out from all the other startup conferences</b> and career fairs. Our guiding principle – in a nutshell – can be summarized as curated recruiting: from the pre-selection of the participants and companies to the creation of multifaceted opportunities for deliberate and thorough interaction and engagement. <b>We have one goal for the BTS – we want you to meet</b>, get to know and hire <b>Europe’s best talents</b> all while minimizing your recruiting and employer branding efforts.
+                        </p>
+                    </div>
+                    <button href="#contact" onClick="scrollToContact()" type="button" class="btn btn-primary btn-lg outline dark-button">Become part of #BTS16</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="counters" class="counters" data-speed="4" data-type="background" style="margin-top:50px; margin-bottom: 50px;">
+            <div class="bts2016 counters">
+                <div class="overlay"></div>
+                <div class="row">
+                    <div class="col-md-3 project">
+                        <h3 id="counter">0</h3>
+                        <h4>Ambitious Participants</h4>
+                    </div>
+                    <div class="col-md-3 project">
+                        <h3 id="counter1">0</h3>
+                        <h4>Selected Companies</h4>
+                    </div>
+                    <div class="col-md-3 project">
+                        <h3 id="counter2">0</h3>
+                        <h4>Days</h4>
+                    </div>
+                    <div class="col-md-3 project">
+                        <h3 id="counter3">0</h3>
+                        <h4>Uique Opportunity</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="bts2016" class="bts2016 no-top-padding container content-section text-center">
+            <div class="row">
+                <div id="about">
+                    <div class="container">
+                        <div class="row aboutUs" style="margin-top: 40px;">
+                            <div class="col-md-12" style="margin-bottom:30px;">
+                                <h3 style="margin-top:0px;">The Berlin Talent Summit in a nutshell</h3>
+                                <h4>More than just a startup conference.</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position: relative;">
+                        <div class="container">
+                            <div class="row about">
+                                <div class="col-md-6">
+                                    <div class="about1 wp1">
+                                        <!-- <img class="pic1Ab" src="img/picAbout/aboutP1.png" style="padding-top:50px;"> -->
+                                        <i class="fa fa-university pic1Ab" style="font-size:60px; color:#f59227; margin-top:30px;"></i>
+                                        <h3><b>Europe’s best talents</b></h3>
+                                        <p>Screened and selected based on their achievements and motivation, coming from 40+ target universities inside and outside of Germany and having a multitude of backgrounds.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about2 wp2">
+                                        <!-- <img class="pic2Ab" src="img/picAbout/aboutP2.png" style="padding-top:50px;padding-bottom: 0;"> -->
+                                        <i class="fa fa-thumbs-up pic2Ab" style="font-size:60px; color:#f59227; margin-top:30px;"></i>
+                                        <h3><b>Quality instead of quantity</b></h3>
+                                        <p>We are not the next impersonal and overcrowded career fair. Through our rigorous selection process we will make sure you can focus your resources on meeting Europe’s very best.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="horL">
+                            <img src="img/horL.png">
+                        </div>
+
+                        <div class="container">
+                            <div class="row about">
+                                <div class="col-md-6">
+                                    <div class="about1 wp3">
+                                        <!-- <img class="pic1Ab" src="img/picAbout/aboutP3.png" style="padding-top:50px;padding-bottom:40px;"> -->
+                                        <i class="fa fa-rocket pic1Ab" style="font-size:60px; color:#f59227; margin-top:30px; padding-bottom:50px;"></i>
+                                        <h3><b>Our mission</b></h3>
+                                        <p>Connecting the best talents with the best companies. And that doesn’t mean for us to just provide you with a 2x2 meter booth right next to 200 other companies. It means to offer valuable opportunities for direct engagement, such as collaborative workshop sessions, relaxed networking events and inspiring ge-togethers.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about2 wp4">
+                                        <!-- <img class="pic2Ab" src="img/picAbout/aboutP4.png" style="padding-top:50px;"> -->
+                                        <i class="fa fa-spinner pic2Ab" style="font-size:60px; color:#f59227; margin-top:30px;"></i>
+                                        <h3><b>Our idea</b></h3>
+                                        <p>We want you to show the participants what your company is all about: your values, your work environment and your daily routines. Because that is what will make the participants wanting to stay right at your office.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row aboutUs" style="margin-top: 40px;">
+                            <div class="col-md-12" style="margin-bottom:30px;">
+                                <h3 style="margin-top:0px; color: #f59227; font-size:24px;">Exclusive and curated recruiting of high potential students, graduates and young professionals. Europe’s best candidates, right at your doorstep.</h3>
+                            </div>
+                        </div>
+                    </div>
+
+            		<div class="container">
+              			<div class="row">
+                				<div class="col-md-12 wwa">
+                  					<span name="about"></span>
+                  					<h3 style="margin-top:60px;">Program points of the Berlin Talent Summit 2016</h3>
+                  					<h4>As part of the 2016 Berlin Talent Summit, we offer various program modules to our partners that each have different priorities in the fields of employer branding and recruiting.</h4>
+                				</div>
+              			</div>
+            		</div>
+
+                    <!-- Portfolio grtid -->
+                    <div id="portfolio">
+                        <div class="container">
+                            <div class="row mt">
+                                <ul class="grid effect-2" id="grid">
+                                    <li>
+                                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                                            <div class="overlay">
+                                                <h1 style="font-size:24px;color:white;margin-top:70%;">1. Keynotes and Presentations</h1>
+                                            </div>
+                                            <img src="img/picPortfolio/1.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                            <div class="overlay">
+                                                <h1 style="font-size:24px;color:white;margin-top:25%;">2. Office Visit and In-company Workshop</h1>
+                                            </div>
+                                            <img src="img/picPortfolio/2.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                                            <div class="overlay">
+                                                <h1 style="font-size:24px;color:white;margin-top:70%;">3. Workshop</h1>
+                                            </div>
+                                            <img src="img/picPortfolio/3.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                                            <div class="overlay">
+                                                <h1 style="font-size:24px;color:white;margin-top:25%;">4. Interviews</h1>
+                                            </div>
+                                            <img src="img/picPortfolio/4.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                                            <div class="overlay">
+                                                <h1 style="font-size:24px;color:white;margin-top:25%;">5. Speed-dating & Recruiting Corner</h1>
+                                            </div>
+                                            <img src="img/picPortfolio/5.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                                            <div class="overlay">
+                                                <h1 style="font-size:24px;color:white;margin-top:25%;">6. Networking activities</h1>
+                                            </div>
+                                            <img src="img/picPortfolio/6.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                                            <div class="overlay">
+                                                <h1 style="font-size:24px;color:white;margin-top:25%;">7. Skill sessions</h1>
+                                            </div>
+                                            <img src="img/picPortfolio/7.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                                            <div class="overlay">
+                                                <h1 style="font-size:24px;color:white;margin-top:25%;">8. New concepts</h1>
+                                            </div>
+                                            <img src="img/picPortfolio/8.jpg">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container" style="margin-bottom:0px;">
+                    <div class="row aboutUs" style="margin-top: 30px;">
+                        <div class="col-md-12" style="margin-bottom:20px;">
+                            <h3 style="margin-top:0px;font-family: 'Roboto', 'sans-serif';font-weight: 400;">More information? Questions?</h3>
+                        </div>
+                    </div>
+
+                    <button href="#contact" onClick="scrollToContact()" type="button" class="btn btn-primary btn-lg outline dark-button" style="margin-top:0px;margin-bottom:0px;">Get in touch with us!</button>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 hr1" style="margin-bottom:0px;padding-bottom:0px;">
+                            <hr style="margin-bottom: 0px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+                    <!-- 
+            		<div class="container">
+            			<div class="row team">
+            				<div class="col-md-4 b1">
+            						<img class="img-responsive" src="img/picTeam/picT1.png">
+            						<h4>Tom Simpson</h4>
+            						<h5>CEO</h5>
+            						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit <br/>quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+            						<ul>
+            							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            							<li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+            							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+            						</ul>
+            				</div>
+            				<div class="col-md-4">
+            						<img class="img-responsive" src="img/picTeam/picT2.png">
+            						<h4>John Doe</h4>
+            						<h5>Project Manager</h5>
+            						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br/> quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+            						<ul>
+            							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            							<li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+            							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+            						</ul>
+            				</div>
+            				<div class="col-md-4 b3">
+            						<img class="img-responsive" src="img/picTeam/picT3.png">
+            						<h4>Anna White</h4>
+            						<h5>Developer</h5>
+            						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br/> quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+            						<ul>
+            							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            							<li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+            							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+            						</ul>
+            				</div>
+            			</div>
+            		</div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 hr1">
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="wwa">
+                                <h3>Title title title title title title title title title title title!</h3>
+                            </div>
+                            <div class="col-md-3 bar">
+                                <div class="progB chart" data-percent="64"  data-animate="3500">
+                                    <div class="chart chart-content">
+                                        <div class="percentage" data-percent="64">
+                                            <span class="percent">64</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="textP">
+                                    <h3>Item #</h3>
+                                    <p>Nulla consectetur ornare nibh, a auctor <br/>mauris scelerisque eu proin nec urna quis. </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 bar">
+                                <div class="progB chart" data-percent="22"  data-animate="3500">
+                                    <div class="chart chart-content">
+                                        <div class="percentage" data-percent="22">
+                                            <span class="percent">22</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="textP">
+                                    <h3>Item #</h3>
+                                    <p>Nulla consectetur ornare nibh, a auctor <br/>mauris scelerisque eu proin nec urna quis. </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 bar ">
+                                <div class="progB chart" data-percent="84"  data-animate="3500">
+                                    <div class="chart chart-content">
+                                        <div class="percentage" data-percent="22">
+                                            <span class="percent">84</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="textP">
+                                    <h3>Item #</h3>
+                                    <p>Nulla consectetur ornare nibh, a auctor <br/>mauris scelerisque eu proin nec urna quis. </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 bar ">
+                                <div class="progB chart" data-percent="45"  data-animate="3500">
+                                    <div class="chart chart-content">
+                                        <div class="percentage" data-percent="45">
+                                            <span class="percent">45</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="textP">
+                                    <h3>Item #</h3>
+                                    <p>Nulla consectetur ornare nibh, a auctor <br/>mauris scelerisque eu proin nec urna quis. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+        <!-- BTS 2016 Section Ends Here -->
+
+
+        <div id="counters" class="counters" data-speed="4" data-type="background" style="margin-top:50px; margin-bottom: 0px;z-index: -9;">
+            <div class="bts2016 counters" style="padding-top:60px; padding-bottom:60px;">
+            	<div class="overlay" style="z-index: -1;"></div>
+            	<div class="row">
+                	<h3 style="color:white;">Need any more reason to participate? Check out our previous editions!</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <!-- The container for the modal slides -->
+            <div class="slides"></div>
+            <!-- Controls for the borderless lightbox -->
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+            <!-- The modal dialog, which will be used to wrap the lightbox content -->
+            <div class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left prev">
+                                <i class="glyphicon glyphicon-chevron-left"></i>
+                                Previous
+                            </button>
+                            <button type="button" class="btn btn-primary next">
+                                Next
+                                <i class="glyphicon glyphicon-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Story Section -->
+        <section id="story" class="story container content-section text-center">
+    		<div class="container">
+                <div class="row">
+                    <div class="col-md-12 hr1" style="margin-bottom:0px;padding-bottom:0px;">
+                        <hr style="margin-bottom: 0px;" />
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding: 0;margin: 0;margin-top:50px;">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="section-title" style="color:white;">The Aftermovie</h2>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h3 class="section-subheading bts_orange" style="margin-top:30px; margin-bottom:35px;">
+                                Last year's event was awsome. This year's will be better.
+                            </h3>
+                        </div>
+                    </div>
+                    <iframe width="80%" height="450px" src="http://www.youtube.com/embed/nXzPMKkFGbY?rel=0&vq=hd720" frameborder="0" allowfullscreen="allowfullscreen" data-link="http://www.youtube.com/watch?v=nXzPMKkFGbY"></iframe>
+                    <!--
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="timeline">
+                                <li class="wow zoomIn animated" style="visibility:hidden">
+                                    <div class="timeline-image">
+                                        <img class="img-circle img-responsive" src="img/picTimeline/1.jpg" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>2014</h4>
+                                            <h4 class="subheading">Our Humble Beginnings</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">In 2014, we brought 16 students from Italy’s top business school to Berlin and in contact with 14 companies, startups and VCs. 2/3 of the participants found a job through the Bocconi Students Entrepreneurship Trek.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted wow zoomIn animated" style="visibility:hidden">
+                                    <div class="timeline-image">
+                                        <img class="img-circle img-responsive" src="img/picTimeline/2.jpg" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>2015</h4>
+                                            <h4 class="subheading">Giving a Chance to Others</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">In 2015, we wanted to offer this chance not just to students from our alma mater, and hence opened the application process to students, graduates and young professionals from around 25 target universities outside of Germany.
+In the end, we had close to 500 applications and selected 200 of the best candidates for the first edition of the Berlin Talent Summit. These participants came from 63 universities, had 35 different nationalities and represented all five continents. At the BTS, they had the chance to engage with 35 of the best companies, startups and VC funds out there. In the end, 80% of actively looking companies hired a participant.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="wow zoomIn animated" style="visibility:hidden">
+                                    <div class="timeline-image">
+                                        <h4>Logo.</h4>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>2016</h4>
+                                            <h4 class="subheading">Become part of the story!</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 hr1" style="margin-bottom:0px;padding-bottom:0px;">
+                        <hr style="margin-top:0px;margin-bottom:40px;" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="links" class="links">
+                <a href="img/gallery/IMG_4203-1024x683.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4203-1024x683.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4284-1024x683.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4284-1024x683.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4317-1024x682.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4317-1024x682.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4332-1024x683.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4332-1024x683.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4334-1024x682.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4334-1024x682.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4338-1024x682.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4338-1024x682.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4354-1024x683.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4354-1024x683.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4388-1024x682.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4388-1024x682.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4418-1024x682.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4418-1024x682.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4419-1024x682.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4419-1024x682.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4451-1024x683.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4451-1024x683.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4479-1024x683.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4479-1024x683.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4493-1024x682.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4493-1024x682.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4524-1024x682.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4524-1024x682.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4532-1024x682.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4532-1024x682.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4641-1024x683.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4641-1024x683.jpg" alt="">
+                </a>
+                <a href="img/gallery/IMG_4682-1024x682.jpg" title="" data-gallery>
+                    <img src="img/gallery/IMG_4682-1024x682.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 hr1" style="margin-bottom:0px;padding-bottom:0px;">
+                        <hr style="margin-top:0px;margin-bottom:40px;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Story Section Ends Here -->
+
+        <!-- Sponsors Section -->
+        <section id="sponsors" class="sponsors container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="section-title">Sponsors</h2>
+                </div>
+                <div class="container">
+                    <div class="row aboutUs" style="margin-top: 40px;">
+                        <div class="col-md-12" style="margin-bottom:10px;">
+                            <h3 style="margin-top:0px; color: #f59227; font-size:24px;">We are very happy to have worked with and experienced the trust of some of the finest and most successful companies, startups and VC funds out there- many of whom already participated in both editions and will also be part of the BTS16:</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="well-none">
+                            <div id="myCarousel1" class="carousel slide">
+                                
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.babbel.com/" target="_blank"><img src="img/sponsors/babbel.png" alt="babbel" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.drivy.com/" target="_blank"><img src="img/sponsors/drivy.png" alt="drivy" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://earlybird.com/" target="_blank"><img src="img/sponsors/earlybird.png" alt="earlybird" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://eu.experteer.com/" target="_blank"><img src="img/sponsors/experteer.png" alt="experteer" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.finleap.com/" target="_blank"><img src="img/sponsors/finleap.png" alt="finleap" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.hitfoxgroup.com/" target="_blank"><img src="img/sponsors/hitfox_group.png" alt="hitfox group" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="www.kayak.com" target="_blank"><img src="img/sponsors/kayak.png" alt="kayak" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://eng.kitchenstories.de/" target="_blank"><img src="img/sponsors/kitchen_stories.png" alt="kitchen stories" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.locafox.de/" target="_blank"><img src="img/sponsors/locafox.jpeg" alt="locafox" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.mckinsey.com" target="_blank"><img src="img/sponsors/mckinsey.png" alt="mckinsey" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.misterspex.co.uk/" target="_blank"><img src="img/sponsors/mister-spex.png" alt="mister spex" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://payleven.com" target="_blank"><img src="img/sponsors/payleven.png" alt="payleven" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.rocket-internet.com/" target="_blank"><img src="img/sponsors/rocket_Internet.png" alt="rocket Internet" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.rolandberger.com/" target="_blank"><img src="img/sponsors/roland_berger.png" alt="roland berger" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://soundcloud.com/" target="_blank"><img src="img/sponsors/soundcloud.png" alt="soundcloud" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.uber.com/" target="_blank"><img src="img/sponsors/uber.png" alt="uber" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.urlaubspiraten.de/" target="_blank"><img src="img/sponsors/urlaubspiraten.png" alt="urlaubspiraten" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.zalando.de/" target="_blank"><img src="img/sponsors/zalando.png" alt="zalando" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.wooga.com/" target="_blank"><img src="img/sponsors/wooga.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.foodora.de/" target="_blank"><img src="img/sponsors/volo.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="https://twitter.com/" target="_blank"><img src="img/sponsors/twitter.png" alt="twitter" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.thermondo.de/" target="_blank"><img src="img/sponsors/thermondo.png" alt="thermondo" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://global.rakuten.com/en/" target="_blank"><img src="img/sponsors/rakuten.png" alt="rakuten" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.hubraum.com/" target="_blank"><img src="img/sponsors/hubraum.png" alt="hubraum" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.hoteltonight.com" target="_blank"><img src="img/sponsors/hoteltonight.png" alt="hoteltonight" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.gruenderszene.de/" target="_blank"><img src="img/sponsors/gruenderszene.png" alt="gruenderszene" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.groupon.com" target="_blank"><img src="img/sponsors/groupon.png" alt="groupon" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.gobutlernow.com/" target="_blank"><img src="img/sponsors/gobuttler.png" alt="gobuttler" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.getyourguide.com/" target="_blank"><img src="img/sponsors/getyourguide.png" alt="getyourguide" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.factoryberlin.com/" target="_blank"><img src="img/sponsors/factoryberlin.png" alt="factoryberlin" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.exozet.com/" target="_blank"><img src="img/sponsors/exozet.png" alt="exozet" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.axelspringer.de/" target="_blank"><img src="img/sponsors/axel_springer.png" alt="axel_springer" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.amorelie.de/" target="_blank"><img src="img/sponsors/amorelie.png" alt="amorelie" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://www.airbnb.com" target="_blank"><img src="img/sponsors/airbnb.png" alt="airbnb" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><!-- <a href="" target="_blank"><img src="img/sponsors/" alt="Image" class="img-responsive"> --></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><!-- <a href="" target="_blank"><img src="img/sponsors/" alt="Image" class="img-responsive"> --></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                </div>
+                                <!--/carousel-inner--> 
+                                <a class="left carousel-control" role="button" data-slide="prev" onclick="$(this).closest('.carousel').carousel('prev');">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" role="button" data-slide="next" onclick="$(this).closest('.carousel').carousel('next');">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                            <!--/myCarousel1-->
+                        </div>
+                        <!--/well-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sponsors Section Ends Here -->
+
+        <!-- Partners Section -->
+        <section id="partners" class="partners container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="section-title">Partners</h2>
+                </div>
+                <div class="container">
+                    <div class="row aboutUs" style="margin-top: 40px;">
+                        <div class="col-md-12" style="margin-bottom:10px;">
+                            <h3 style="margin-top:0px; color: #f59227; font-size:24px;">Moreover, we are very thankful for the support received by our partners:</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" style="">
+                    <div class="col-md-12">
+                        <div class="well-none">
+                            <div id="myCarousel2" class="carousel slide">
+                                
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.medianet-bb.de/" target="_blank"><img src="img/partners/medianet_250x44.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://berlinwebweek.de/" target="_blank"><img src="img/partners/berlin_web_week.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="https://deutschestartups.org/" target="_blank"><img src="img/partners/bds.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="http://www.berlin-partner.de/" target="_blank"><img src="img/partners/Berlin_Partner.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                </div>
+                                <!--/carousel-inner
+                                <a class="left carousel-control" role="button" data-slide="prev" onclick="$(this).closest('.carousel').carousel('prev');">
+                                    <span class="glyphicon glyphicon-chevron-left" style="margin-left:-50px;color:#f59227;"></span>
+                                </a>
+                                <a class="right carousel-control" role="button" data-slide="next" onclick="$(this).closest('.carousel').carousel('next');">
+                                    <span class="glyphicon glyphicon-chevron-right" style="margin-right:-50px;color:#f59227;"></span>
+                                </a> -->
+                            </div>
+                            <!-- /myCarousel2-->
+                        </div>
+                        <!--/well-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Partners Section Ends Here -->
+
+        <!-- Speakers Section -->
+        <section id="bts2016" class="bts2016 no-top-padding container content-section text-center" style="padding-top:80px;">
+            <div class="row speakers">
+                <div id="about">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2 class="section-title" style="font-size: 30px;">Speakers at BTS15 & BSET14</h2>
+                    </div>
+                    <div class="container">
+                        <div class="row aboutUs" style="margin-top: 40px;">
+                            <div class="col-md-12" style="margin-bottom:10px;">
+                                <h3 style="margin-top:0px; color: #f59227;font-size: 24px;">We are very excited that  some of Berlin’s leading startup execs and founders realized the opportunity of addressing Europe’s best talents and took their time to  talk to our group:</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/alexander_kudlich.png" alt="">
+                                <p class="speaker">Alexander Kudlich – Rocket Internet AG</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/anna_alex.png" alt="">
+                                <p class="speaker">Anna Alex – Co-Founder and CEO, Outfittery AG</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/christian_hardenberg.png" alt="christian hardenberg">
+                                <p class="speaker">Christian Hardenberg – CTO, Rocket Internet AG</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/christian_gottsch.png" alt="christian gottsch">
+                                <p class="speaker">Dr. Christian Göttsch, Founder & CEO experteer</p>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/elio_menzione.png" alt="elio menzione">
+                                <p class="speaker">S.E. Elio Menzione – Italian Ambassador</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/johannes_bruder.png" alt="johannes bruder">
+                                <p class="speaker">Dr. Johannes Bruder – COO, Rocket Internet AG</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/kaya_taner.png" alt="kaya taner">
+                                <p class="speaker">Kaya Taner – CEO, Applift</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/christian_freese.png" alt="christian freese">
+                                <p class="speaker">Christian Freese, MD Germany UBER</p>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/masoud_kamali.png" alt="masoud kamali">
+                                <p class="speaker">Masoud Kamali – CEO, WestTech Ventures</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/maximilan_claussen.png" alt="maximilan claussen">
+                                <p class="speaker">Maximilian Claussen – Principal, Earlybird Venture Capital</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/jens_urbaniak.png" alt="jens urbaniak">
+                                <p class="speaker">Jens Urbaniak, Co-Founder GoButler</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/jens_begemann.png" alt="jens begemann">
+                                <p class="speaker">Jens Begemann, CEO Wooga</p>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/hanning_dorstewitz.png" alt="hanning dorstewitz">
+                                <p class="speaker">Henning Dorstewitz, VP Communications Twitter</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/gero_graf.png" alt="gero graf">
+                                <p class="speaker">Gero Graf, CEO Germany Drivy</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                <img class="img-circle img-responsive" src="img/speakers/alexander_kudlich.png" alt="">
+                                <p class="speaker">Alexander Kudlich – Rocket Internet AG</p>
+                            </div>
+                            <div class="col-xs-2 wow zoomIn animated" style="visibility:hidden">
+                                
+                            </div>
+                        </div>
+                        <!-- item -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Speakers Section Ends Here -->
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials container content-section text-center">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="section-title" style="font-size: 30px;">Testimonials</h2>
+            </div>
+            <div class="container">
+                <div class="row aboutUs" style="margin-top: 40px;">
+                    <div class="col-md-12" style="margin-bottom:10px;">
+                        <h3 style="margin-top:0px; color: #f59227;font-size: 24px;">Here is what they say about the Berlin Talent Summit</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" data-wow-delay="0.2s">
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel" style="margin-top: 0;">
+                            <!-- Bottom Carousel Indicators -->
+                            <ol class="carousel-indicators" style="top: 240px;">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive" src="img/sponsors/amorelie.png" alt="amorelie.png">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="img/sponsors/experteer.png" alt="experteer.png">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="img/sponsors/kitchen_stories.png" alt="kitchen_stories.png">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="3"><img class="img-responsive" src="img/sponsors/rocket_Internet.png" alt="rocket_Internet.png">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="4"><img class="img-responsive" src="img/sponsors/gobuttler.png" alt="gobuttler.png">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="5"><img class="img-responsive" src="img/sponsors/earlybird.png" alt="earlybird.png">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="6"><img class="img-responsive" src="img/sponsors/" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="7"><img class="img-responsive" src="img/sponsors/" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="8"><img class="img-responsive" src="img/sponsors/zalando.png" alt="zalando.png">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="9"><img class="img-responsive" src="img/sponsors/zalando.png" alt="zalando.png">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="10"><img class="img-responsive " src="img/sponsors/" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="11"><img class="img-responsive" src="img/sponsors/exozet.png" alt="exozet.png">
+                                </li>
+                            </ol>
+
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner text-center">
+                                <!-- Quote 1 -->
+                                <div class="item active">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>The Berlin Talent Summit is a great initiative. We got in touch with international students and gave them insights into our office and business model. The high potential candidates from different nationalties showed profound knowledge about startups and asked many interesting questions. We appreciated the relaxed, startup-like atmosphere of the recruiting event in the evening and took the chance to interact with potential candidates. We are looking forward to join the BTS 2016!</p>
+                                                <small>Sebastian Pollock, Co-Founder Amorelie</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 2 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>We were very excited about the event and we would most certainly say that it was a great success.<br />
+                                                The BTS not only gave us the opportunity to interact and get to know young talented and dedicated students and young professionals.<br />
+                                                It was a great opportunity to present our company to a great international audience and to increase our “high-potentials” hiring pipeline. We are in fact looking forward to the BTS 2016!</p>
+                                                <small>Otto Vázquez Domínguez, Recruiting Manager</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 3 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>Wir waren vom Talent Summit und der Organisation super begeistert. Durch unsere Teilnahme hatten wir die Möglichkeit auf nur einem Event motivierte und Start-up begeisterte Studenten von europäischen Top-Unis kennenzulernen. Die Veranstaltung hatte einen tollen Spirit und wir haben direkt Mitarbeiter rekrutieren können.</p>
+                                                <small>Verena Hubertz, Kitchen-Stories, Co-Founder</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 4 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>A high density of great talents, recruiting with rocket speed and a relaxed atmosphere. The Berlin Talent Summit was a truly unique experience and a big chance for our recruiting and employer branding efforts. We are looking forward to the 2016 edition.</p>
+                                                <small>Joesphin Letzner, Recruiter, Rocket Internet</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 5 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>BTS was a great opportunity to get in touch with international, talented, young people and present GoButler’s business to them. The applications we subsequently received from participants were really helpful in regards to our expansion plans. Some of the people we met are an integral of the GoButler team now.</p>
+                                                <small>Jens Urbaniak, GoButler, Co-founder</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 6 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>200 people and 40 companies in 2 days is a great stream that Berlin Talent Summit creates for the participants to get deep inside perspectives on the startups, accelerators, VCs and provides you the opportunity to meet new peers!</p>
+                                                <small>Milda Jasaite, Earlybird, Analyst</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 7 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>The Berlin Talent Summit was a nice chance to meet talents from a lot of very interesting universities. The format allowed us to give the students detailed insights into Helping’s business modell and culture. Furthemore, the relaxed and professional environment made interaction with candidates very easy.</p>
+                                                <small>Katharina Prien, Head of HR, Helpling</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 8 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>As a VC company, getting access to candidates with an interest in startups as well as finance is crucial. At the Berlin Talent Summit we got the chance to meet many such candidates from all over Europe. The seamless organisation and great concept made it easy to find the right candidates and interact with them in a nice atmosphere.</p>
+                                                <small>Min-Sung Kim, Partner, XLHealth</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 9 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>The Berlin Talent Summit 2015 was a great way of interacting with students across Europe. Organized by a young and dynamic team, one could notice the good spirit and hands-on pragmatism at all time. From presenting our company at our offices and engaging with students during the evening program, until having hired one of the highly qualified participants, it took Zalando only 3 weeks. So pretty efficient event from recruiting perspective... Many thanks to the orga team!</p>
+                                                <small>Ivo Scherkamp, Manager Zalon by Zalando</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 10 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>The Berlin Talent Summit is a great chance to get to know high-educated and motivated people from all over the world - in a great and relaxed atmosphere.</p>
+                                                <small>Juliane Krüger, Employer Branding, Zalando</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 11 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>Die Berlin Talent Summit und deren Organisation hat uns sehr begeistert. Die Veranstaltung hatte eine tolle Atmosphäre und für unser Team haben wir einen super Impuls mitgenommen und viele potentielle Kandidaten kennengelernt. Die Gelegenheit begeisterte Studenten von europäischen Top-Unis zu treffen und ihnen unser Business Modell näherzubringen fanden wir sehr spannend.</p>
+                                                <small>Matthias Hofmuth, Flixbus MeinFernbus, International HR</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 12 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <p>Der Berlin Talent Summit war großartig! Die Studentengruppe, die wir bei uns im Office begrüßen durften, war fantastisch vorbereitet und sehr interessiert – wir wurden mit spannenden und herausfordernden Fragen regelrecht gelöchert. Wir haben anschließend noch viele Gespräche geführt und sind per Mail mit einigen Studenten noch immer in Kontakt. Eine Absolventin konnten wir sogar schon einstellen. Ein Dank und Lob an die Organisatoren: tolles Format, tolle Organisation, sehr gute Studentenauswahl!</p>
+                                                <small>Susanne Schwarz, Head of HR @ Exozet</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Buttons Next/Prev 
+                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                            -->
+
+                            <a class="left carousel-control" role="button" data-slide="prev" onclick="$(this).closest('.carousel').carousel('prev');" style="left:0px;">
+                                <span class="glyphicon glyphicon-chevron-left" style="margin-left:0px;color:#f59227;"></span>
+                            </a>
+                            <a class="right carousel-control" role="button" data-slide="next" onclick="$(this).closest('.carousel').carousel('next');" style="right:0px;">
+                                <span class="glyphicon glyphicon-chevron-right" style="margin-right:0px;color:#f59227;"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section Ends Here -->
+
+        <!-- Participants Section -->
+        <section id="participants" class="participants container content-section text-center" style="margin-bottom:140px;">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="section-title">Participants</h2>
+                </div>
+                <div class="container">
+                    <div class="row aboutUs" style="margin-top: 40px;">
+                        <div class="col-md-12" style="margin-bottom:10px;">
+                            <h3 style="margin-top:0px; color: #f59227; font-size:24px;">More than just your regular recruiting event participants</h3>
+                            <p  style="text-align:center; font-family: proxima-nova, sans-serif;">
+                                <b>Meet Europe's best talents right at your doorstep in Berlin.</b><br />
+                                To guarantee the exclusivity of the Berlin Talent Summit and the quality of our participants, we have initiated a <b>rigorous selection process</b>. Each candidate has to apply with their CV and a letter of motivation, which will then be ranked along a multitude of criteria against all other applicants. Only then the <b>top applicants</b> will receive their letter of admission.<br />
+                                <br />
+                                For the <b>2015 Berlin Talent Summit</b>, we received around <b>500 applications</b>, of which we selected the <b>200 best candidates</b>. Around 50% of the candidates had a business or finance background, one third of the candidates came from a tech background while the remainder had a variety of backgrounds (from law to marketing and visual arts).<br />
+                            </p>
+                            <h2 class="section-title" style="margin-top:30px;">Universities</h2>
+                            <h3 style="margin-top:0px; color: #f59227;font-size: 24px;">Here are some of the fine institutions and universities that our participants were coming from:</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="well-none">
+                            <div id="myCarousel3" class="carousel slide">
+                                
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/HEC_paris.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/Imperial_college.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/LSOE.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/bocconi.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/cambridge.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/esade.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/escp_europe.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/oxford.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/polito.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/unipi.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/upm.png" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                            <!-- <div class="col-sm-3 col-xs-6"><a href="" target="_blank"><img src="img/universities/" alt="Image" class="img-responsive"></a>
+                                            </div> -->
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                </div>
+                                <!--/carousel-inner--> 
+                                <a class="left carousel-control" role="button" data-slide="prev" onclick="$(this).closest('.carousel').carousel('prev');">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" role="button" data-slide="next" onclick="$(this).closest('.carousel').carousel('next');">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                            <!--/myCarousel3-->
+                        </div>
+                        <!--/well-->
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h3 style="margin-top:0px; color: #f59227;font-size: 24px;">In their own words</h3>
+                    <div class="row">
+                        <div class="col-md-12" data-wow-delay="0.2s">
+                            <div class="carousel slide" data-ride="carousel" id="quote-carousel-2" style="margin-top: 0;">
+                                <!-- Bottom Carousel Indicators -->
+                                <ol class="carousel-indicators" style="top: 200px;">
+                                    <li data-target="#quote-carousel-2" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                                    </li>
+                                    <li data-target="#quote-carousel-2" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg" alt="">
+                                    </li>
+                                    <li data-target="#quote-carousel-2" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" alt="">
+                                    </li>
+                                </ol>
+
+                                <!-- Carousel Slides / Quotes -->
+                                <div class="carousel-inner text-center">
+                                    <!-- Quote 1 -->
+                                    <div class="item active">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-8 col-sm-offset-2">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                                                    <small>Someone famous</small>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <!-- Quote 2 -->
+                                    <div class="item">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-8 col-sm-offset-2">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                                    <small>Someone famous</small>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <!-- Quote 3 -->
+                                    <div class="item">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-8 col-sm-offset-2">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                                                    <small>Someone famous</small>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+
+                                <!-- Carousel Buttons Next/Prev 
+                                <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                                <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                                -->
+
+                                <a class="left carousel-control" role="button" data-slide="prev" onclick="$(this).closest('.carousel').carousel('prev');" style="left:0px;">
+                                    <span class="glyphicon glyphicon-chevron-left" style="margin-left:0px;color:#f59227;"></span>
+                                </a>
+                                <a class="right carousel-control" role="button" data-slide="next" onclick="$(this).closest('.carousel').carousel('next');" style="right:0px;">
+                                    <span class="glyphicon glyphicon-chevron-right" style="margin-right:0px;color:#f59227;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Participants Section Ends Here -->
+
+        <!-- Press Section -->
+        <section id="press" class="press container content-section text-center">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="section-title">Featured In</h2>
+            </div>
+            <div class="container">
+                <div class="row aboutUs" style="margin-top: 40px;">
+                    <div class="col-md-12" style="margin-bottom:10px;">
+                        <h3 style="margin-top:0px; color: #f59227; font-size:24px;">World-renowned speakers, amazing startups and so much more. Sign up for our newsletter to keep up with our biggest news.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="well-none">
+                        <div id="myCarousel3" class="carousel slide">
+                            
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-md-2 col-md-offset-1"><a href="http://www.gruenderszene.de/" target="_blank"><img src="img/press/gruenderszene.png" alt="gruenderszene" class="img-responsive"></a>
+                                        </div>
+                                        <div class="col-md-2"><a href="http://berlinvalley.com/" target="_blank"><img src="img/press/berlinvalley.png" alt="berlinvalley" class="img-responsive"></a>
+                                        </div>
+                                        <div class="col-md-2"><a href="http://www.wiwo.de/" target="_blank"><img src="img/press/wirtschafts_woche.png" alt="wirtschafts woche" class="img-responsive"></a>
+                                        </div>
+                                        <div class="col-md-2"><a href="http://www.morgenpost.de/" target="_blank"><img src="img/press/berlinermorgenpost.png" alt="berlinermorgenpost" class="img-responsive"></a>
+                                        </div>
+                                        <div class="col-md-2"><a href="http://www.dw.com/" target="_blank"><img src="img/press/deutsche_welle.png" alt="deutsche welle" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+                                    <!--/row-->
+                                </div>
+                            </div>
+                            <!--/carousel-inner
+                            <a class="left carousel-control" role="button" data-slide="prev" onclick="$(this).closest('.carousel').carousel('prev');">
+                                <span class="glyphicon glyphicon-chevron-left" style="margin-left:-50px;color:#f59227;"></span>
+                            </a>
+                            <a class="right carousel-control" role="button" data-slide="next" onclick="$(this).closest('.carousel').carousel('next');">
+                                <span class="glyphicon glyphicon-chevron-right" style="margin-right:-50px;color:#f59227;"></span>
+                            </a>
+                        </div>
+                        /myCarousel3-->
+                    </div>
+                    <!--/well-->
+                </div>
+            </div>
+        </section>
+        <!-- Press Section Ends Here -->
+
+        <!-- Team Section 
+        <section id="team" class="team container content-section text-center">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="section-title">Our Team</h2>
+                </div>
+                <div class="row team">
+                    <div class="col-md-4 b1">
+                            <img class="img-responsive" src="img/picTeam/picT1.png">
+                            <h4>Tom Simpson</h4>
+                            <h5>CEO</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit <br/>quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                            </ul>
+                    </div>
+                    <div class="col-md-4">
+                            <img class="img-responsive" src="img/picTeam/picT2.png">
+                            <h4>John Doe</h4>
+                            <h5>Project Manager</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br/> quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                            </ul>
+                    </div>
+                    <div class="col-md-4 b3">
+                            <img class="img-responsive" src="img/picTeam/picT3.png">
+                            <h4>Anna White</h4>
+                            <h5>Developer</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br/> quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+         Team Section Ends Here -->
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="newsletter bts2016 container content-section text-center">
+            <div class="row" style="padding: 0;margin: 0;margin-top:50px;">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="section-title" style="color:white;font-size:30px">We've got Big News!</h2>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h3 class="section-subheading bts_orange" style="margin-top:30px; margin-bottom:35px;font-size:24px">
+                                World-renowned speakers, amazing startups and so much more. Sign up for our newsletter to keep up with our biggest news.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top:1%;">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form id="subscription-form-2" role="form">
+                        <div style="margin-top:15px;">
+                            <div class="input-group" style="width:55%; margin-left:11%; margin-top:2px; float:left;">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                                <input class="form-control" type="text" id="s_email_2" name="" placeholder="your@email.com" style="height:45px; font-size:24px; text-align:center;">
+                            </div>
+                            <input type="submit" value="Subscribe" class="btn btn-large btn-primary" style="width:20%; margin-right:11%; float:right; margin-bottom:70px;" />
+                        </div>
+                        <div class="ajax-response" style="color: red; padding-top: 60px;"></div>
+                        <div class="ajax-response-success" style="color: green; padding-top: 60px;"><i class="fa fa-thumbs-up"></i> Subscription successfully sent.</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter Section Ends Here -->
+
+        <!-- Contact Section -->
+        <div id="contact" class="contact" data-speed="4" data-type="background">
+            <div class="contact">
+                <div class="overlay"></div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="pfblock-header">
+                            <h3 class="pfblock-title" style="color:#f59227;">Drop us a line</h2>
+                            <div class="pfblock-line"></div>
+                            <div class="pfblock-subtitle">
+                                <h4 style="color: #33a6cc; margin-bottom:30px;">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <form id="contact-form" role="form">
+                            <div class="ajax-hidden">
+                                <div class="form-group wow fadeInUp">
+                                    <label class="sr-only" for="c_name">Name</label>
+                                    <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+                                </div>
+
+                                <div class="form-group wow fadeInUp" data-wow-delay=".1s">
+                                    <label class="sr-only" for="c_email">Email</label>
+                                    <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+                                </div>
+
+                                <div class="form-group wow fadeInUp" data-wow-delay=".2s">
+                                    <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
+                            </div>
+                            <div class="ajax-response" style="color: red;margin-top: 20px;"></div>
+                            <div class="ajax-response-success" style="color: green;margin-top: 20px;"><i class="fa fa-thumbs-up "></i> Message successfully sent.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Section Ends Here -->
+
+        <!-- Footer -->
+        <footer id="footer">
+        		<div class="container">
+          			<div class="row">
+            				<div class="col-sm-12">
+                        <div class="container text-center">
+                            <ul class="social-links">
+                                <li><a href="https://www.facebook.com/berlinsummit" class="wow fadeInUp" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/hashtag/BerlinTalentSummit?src=hash" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/berlin-talent-summit" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                            <p class="heart">Made with <span class="fa fa-heart fa-2x animated pulse"></span> in Pisa</p>
+                            <p>Copyright &copy; Berlin Talent Summit 2015.</p>
+                        </div>
+            				</div>
+          			</div>
+        		</div>
+      	</footer>
+        <!-- Footer Ends Here -->
+
+      	<!-- Scroll to top -->
+      	<div class="scroll-up" style="">
+      		  <a href="#page-top"><i class="fa fa-angle-up"></i></a>
+      	</div>
+          <!-- Scroll to top Ends Here-->
+
+        <!-- Portfolio Modals -->
+        <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+        <!-- Portfolio Modal 1 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"> </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 style="margin-bottom:30px;">1. Keynotes and Presentations</h2>
+                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                    <img class="" src="img/picPortfolio/portfolio1-preview.png" alt="" style="width:100%;">
+                    <p>Address the entire audience or a selected subgroup with a topic of your choice in an innovative presentation format – bring your best speaker and get prepared, because the questions will just keep on coming.</p>
+                    <ul class="list-inline">
+                      <li>Recruiting: 0/3</li>
+                      <li>Employer Branding: 3/3</li>
+                      <li></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Modal 2 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"> </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="modal-body">
+                    <h2 style="margin-bottom:30px;">2. Office Visit and In-company Workshop</h2>
+                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                    <img class="" src="img/picPortfolio/portfolio2-preview.png" alt="" style="width:100%;">
+                    <p>If you are a Berlin-based company, you can host a workshop right at  your office-for 2 hours (or even more), you can tackle and work on real life challenges with the group, no matter if its a marketing plan, expansion strategy or growth hack. The participants will see in-depth how your company works and what it feels lile to be part of your team, and you can find out in detail  who has the qualities to become a new team member.</p>
+                    <ul class="list-inline">
+                      <li>Recruiting: 1/3</li>
+                      <li>Employer Branding: 2/3</li>
+                      <li></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Modal 3 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"> </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 style="margin-bottom:30px;">3. Workshop</h2>
+                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                    <img class="" src="img/picPortfolio/portfolio3-preview.png" alt="" style="width:100%;">
+                    <p>If your company is not based in Berlin – no worries! We don’t want you to miss out on the opportunity of hosting a workshop, and – in collaboration with our location partners in Berlin – organise you space in some of the hippest working locations in Berlin. We have done this before with companies from Hamburg and Munich, and it worked out just as well. Small advantage:  that way you have the chance to  impress even more with the content, because the participants won’t be distracted by the kicker, pool or open bar you have in your office;)</p>
+                    <ul class="list-inline">
+                      <li>Recruiting: 1/3</li>
+                      <li>Employer Branding: 2/3</li>
+                      <li></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Modal 4 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"> </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 style="margin-bottom:30px;">4. Interviews</h2>
+                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                    <img class="" src="img/picPortfolio/portfolio4-preview.png" alt="" style="width:100%;">
+                    <p>Don’t miss out on the chance to directly interview and recruit some of Europe’s best talents- at the end of the day, that’s what the BTS is all about. We will provide you with the CVs of the selected  participants prior to the BTS16, so you can have a first check and even schedule interviews before the candidates will land in Berlin. During the BTS, we will then provide you with dedicated time slots and exclusive interview rooms, so you can conduct your conversations in private. Believe us- the only regret you will have is that you don’t have time to interview all 300 participants. In the last years, some participants directly signed their contracts at the spot or during the afterparty. Convenient, isn’t it?</p>
+                    <ul class="list-inline">
+                      <li>Recruiting: 3/3</li>
+                      <li>Employer Branding: 0/3</li>
+                      <li></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Modal 5 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"> </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 style="margin-bottom:30px;">5. Speed-dating & Recruiting Corner</h2>
+                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                    <img class="" src="img/picPortfolio/portfolio5-preview.png" alt="" style="width:100%;">
+                    <p>If you don’t have the resources to look through the CVs in advance or you prefer to get surprised by the quality of the participants during the BTS, you can also participate in our speed-dating sessions, where you will have the chance to meet a large number of participants in a very short time. If you have found a candidate with whom you would like to continue your conversation, you can retreat to your private recruiting corner to do so. The best part: these recruiting corners have nothing to do with the usual impersonal and standardized boothes at career fairs, yet are relaxing couch areas that provide a totally new recuriting spirit in which new contacts are made easily and conversations freed of the usual career fair stiffness.</p>
+                    <ul class="list-inline">
+                      <li>Recruiting: 3/3</li>
+                      <li>Employer Branding: 0/3</li>
+                      <li></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Modal 6 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"> </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 style="margin-bottom:30px;">6. Networking activities</h2>
+                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                    <img class="" src="img/picPortfolio/portfolio6-preview.png" alt="" style="width:100%;">
+                    <p>Based on the mission of the BTS, we want to create as much interaction between the participants and the companies as possible. Therefore, we will organize plenty of networking opportunities besides the more formal program points-  a food market, a BBQ, an afterparty, a soccer match or a cruise on the river Spree, just to name a few. At the end of the day, the best connections are being made with a beer in your hand.</p>
+                    <ul class="list-inline">
+                      <li>Recruiting: 2/3</li>
+                      <li>Employer Branding: 1/3</li>
+                      <li></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Modal 7 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"> </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 style="margin-bottom:30px;">7. Skill sessions</h2>
+                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                    <img class="" src="img/picPortfolio/portfolio7-preview.png" alt="" style="width:100%;">
+                    <p>We want the participants to not just go home with many insights about our great partner companies and multiple job offers in their hands, we also want to make them better during the BTS: better candidates during job interviews, better presenters and public speakers, better networkers. Therefore we will organize hands-on skill sessions that target these super important issues of individual career development: CV checks, mock interviews, presentation exercises and many more innovative formats. During these sessions you can observe first hand some of the most important qualities of a potential employee: the ability to listen and learn, as well as to react to criticism and feedback.  What the workshops offer from a content point of view, the skill sessions do from a soft skill perspective.</p>
+                    <ul class="list-inline">
+                      <li>Recruiting: 1/3</li>
+                      <li>Employer Branding: 2/3</li>
+                      <li></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Modal 8 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"> </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 style="margin-bottom:30px;">8. New concepts</h2>
+                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                    <img class="" src="img/picPortfolio/portfolio8-preview.png" alt="" style="width:100%;">
+                    <p>This time, we will also enrich the BTS by offering new formats and concepts: a hackathon, a „Schnitzeljagd“ and many other new and innovative formats. These program modules will be realized in cooperation with external partners and organized only on-demand by our partners. On that note- if you have any special ideas or program points which you always wanted to experience but never saw realized, please just get in touch. We will organize it specifically for you and make it an unforgettable part of the BTS16.</p>
+                    <ul class="list-inline">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+
+        <!-- Custom JavaScript -->
+        <script src="js/onload.js" type="text/javascript"></script>
+        <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+      	<script src="js/jquery.slicknav.js" type="text/javascript"></script>
+        <script src="js/waypoints.min.js" type="text/javascript"></script>
+        <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/camera.min.js"></script>
+		<script type="text/javascript" src="js/myscript.js"></script>
+		<script src="js/sorting.js" type="text/javascript"></script>
+		<script src="js/jquery.isotope.js" type="text/javascript"></script>
+
+
+        <!-- Bootstrap Gallery JavaScript -->
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+        <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+        <script src="js/bootstrap-image-gallery.min.js"></script>
+
+        <!-- Video Section JavaScript -->
+        <link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+        <script src="ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+
+        <script src="assets/js/main.js" type="text/javascript"></script>
+        <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+      	<script src="js/imagesloaded.js" type="text/javascript"></script>
+        <script src="js/classie.js" type="text/javascript"></script>
+        <script src="js/AnimOnScroll.js" type="text/javascript"></script>
+        <script src="js/wow.min.js" type="text/javascript"></script>
+      	<script>
+            new AnimOnScroll( document.getElementById( 'grid' ), {
+                minDuration : 0.4,
+                maxDuration : 0.7,
+                viewportFactor : 0.2
+            } );
+      	</script>
+
+        <script>
+
+        $('body').scrollspy({ target: '#my-navbar' })
+
+        $(".navbar-collapse ul li a[href^='#']").on('click', function(e) {
+
+    	    target = this.hash;
+           // prevent default anchor click behavior
+           e.preventDefault();
+
+           // animate
+           $('html, body').animate({
+               scrollTop: $(this.hash).offset().top
+             }, 300, function(){
+
+               // when done, add hash to url
+               // (default click behaviour)
+               window.location.hash = target;
+             });
+
+        });
+
+
+        $(document).ready(function(){
+    		   // cache the window object
+    		   $window = $(window);
+
+    		        $('.full-panel').each(function() {
+    		            // declare the variable to affect the defined data-type
+    		            var $scroll = $(this);
+
+    		            $(window).scroll(function() {
+    		                // HTML5 proves useful for helping with creating JS functions!
+    		                // also, negative value because we're scrolling upwards
+    		                var yPos = -($window.scrollTop() / 6);
+
+    		                // background position
+    		                var coords = '50% ' + yPos + 'px';
+
+    		                // move the background
+    		                $scroll.css({ backgroundPosition: coords });
+    		            }); // end window scroll
+    		        });  // end section function
+    		}); // close out script
+        </script>
+    </body>
+</html>
