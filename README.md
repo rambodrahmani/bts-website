@@ -20,3 +20,5 @@ Alcune immagini del sito di seguito.
 ![Sito Web Berlin Talent Summit - PIC 7](screens/bts7.png "Sito Web Berlin Talent Summit - PIC 7")
 
 ##### Maggiori informazioni disponibili sul mio profilo Linkedin: https://www.linkedin.com/in/rambodrahmani
+
+Rambod Rahmani <rambodrahmani@autistici.org>
